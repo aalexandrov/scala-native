@@ -74,6 +74,14 @@ updates.](http://twitter.com/scala_native)
 * [How to build?](/docs/building.md)
 * [How to contribute?](/docs/contributing.md)
 
+## Installing to Maven Local 
+
+To install to Maven Local repository, run
+
+```bash
+sbt rtlib/publish nscplugin/publish
+```
+
 ## License
 
 Scala Native is distributed under [the Scala license](

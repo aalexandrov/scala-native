@@ -9,7 +9,7 @@ val libScalaVersion  = "2.11.8"
 lazy val baseSettings = Seq(
   organization := "org.scala-native",
   version      := scala.scalanative.nir.Versions.current,
-
+  publishTo    := Some(Resolver.file("file",  new File(Path.userHome.absolutePath+"/.m2/repository"))),
   scalafmtConfig := Some(file(".scalafmt"))
 )
 
